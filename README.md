@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# User Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **User Management App** is a React-based web application that allows users to view and manage user details. The app supports both light and dark themes and utilizes React Router for navigation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- **Light/Dark Mode Toggle**: Users can switch between light and dark themes for a better viewing experience.
+- **User List View**: Displays a list of users with basic details.
+- **User Detail View**: Provides detailed information about a selected user.
+- **Responsive Design**: Ensures the app is accessible across various devices and screen sizes.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- **Frontend**:
+  - React.js
+  - React Router
+  - Tailwind CSS for styling
+  - React Icons for UI enhancements
+- **State Management**:
+  - Custom Context API for theme management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm or yarn package manager
 
-### `npm run build`
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd user-management-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open the app in your browser:
+   ```
+   http://localhost:3000
+   ```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
+The app can be deployed on platforms like Netlify or Vercel.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deploy on Netlify
+1. Build the app:
+   ```bash
+   npm run build
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Drag and drop the `build` folder to the Netlify dashboard, or link your repository for continuous deployment.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Folder Structure
+```
+user-management-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Home.js
+│   │   ├── UserDetail.js
+│   ├── context/
+│   │   ├── ThemeContext.js
+│   ├── App.js
+│   ├── index.js
+├── package.json
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Known Issues
+### Build Warnings
+- Ensure all external links using `target="_blank"` include `rel="noreferrer"` for security.
 
-### Code Splitting
+### Dependency Issues
+- If encountering issues with Babel presets, add the following to your `devDependencies`:
+  ```bash
+  npm install --save-dev @babel/plugin-proposal-private-property-in-object
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Future Enhancements
+- Add user creation and editing features.
+- Implement API integration for dynamic data.
+- Include user authentication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For any queries, reach out to:
+- **Developer**: Sanjay Narukulla
+- **Email**: [narukullasanjay@gmail.com](mailto:narukullasanjay@gmail.com)
