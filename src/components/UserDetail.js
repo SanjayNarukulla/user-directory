@@ -71,6 +71,7 @@ const UserDetail = () => {
         <a
           href={`https://${user.website}`}
           target="_blank"
+          rel="noreferrer"
           className="text-link hover:text-link-hover"
         >
           {user.website}
