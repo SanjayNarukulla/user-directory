@@ -33,7 +33,7 @@ The **User Management App** is a React-based web application that allows users t
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/SanjayNarukulla/user-directory.git
    cd user-management-app
    ```
 
