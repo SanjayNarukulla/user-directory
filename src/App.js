@@ -48,8 +48,10 @@ const App = () => {
   );
 };
 
-export default () => (
+const RootComponent = () => (
   <ThemeProvider>
     <App />
   </ThemeProvider>
 );
+
+export default RootComponent;
