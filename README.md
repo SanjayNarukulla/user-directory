@@ -80,7 +80,8 @@ user-management-app/
 │   │   ├── Home.js
 │   │   ├── UserDetail.js
 │   ├── context/
-│   │   ├── ThemeContext.js
+│   │   ├── UserContext.js
+|   |   ├── ThemeContext.js
 │   ├── App.js
 │   ├── index.js
 ├── package.json
